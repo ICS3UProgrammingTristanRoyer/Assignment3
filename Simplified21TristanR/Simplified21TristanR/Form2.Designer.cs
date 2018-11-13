@@ -87,19 +87,19 @@
 			// newGameToolStripMenuItem
 			// 
 			this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-			this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.newGameToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
 			this.newGameToolStripMenuItem.Text = "New Game";
 			// 
 			// resetProgressToolStripMenuItem
 			// 
 			this.resetProgressToolStripMenuItem.Name = "resetProgressToolStripMenuItem";
-			this.resetProgressToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.resetProgressToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
 			this.resetProgressToolStripMenuItem.Text = "Reset Progress";
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
 			// 
 			// musicToolStripMenuItem
@@ -114,14 +114,14 @@
 			// resumeToolStripMenuItem
 			// 
 			this.resumeToolStripMenuItem.Name = "resumeToolStripMenuItem";
-			this.resumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.resumeToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
 			this.resumeToolStripMenuItem.Text = "Resume";
 			this.resumeToolStripMenuItem.Click += new System.EventHandler(this.resumeToolStripMenuItem_Click);
 			// 
 			// muteToolStripMenuItem
 			// 
 			this.muteToolStripMenuItem.Name = "muteToolStripMenuItem";
-			this.muteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.muteToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
 			this.muteToolStripMenuItem.Text = "Mute";
 			this.muteToolStripMenuItem.Click += new System.EventHandler(this.muteToolStripMenuItem_Click);
 			// 
@@ -145,7 +145,7 @@
 			// 
 			// btnDone
 			// 
-			this.btnDone.Location = new System.Drawing.Point(262, 336);
+			this.btnDone.Location = new System.Drawing.Point(10, 42);
 			this.btnDone.Name = "btnDone";
 			this.btnDone.Size = new System.Drawing.Size(75, 23);
 			this.btnDone.TabIndex = 3;
@@ -185,7 +185,7 @@
 			// btnHit
 			// 
 			this.btnHit.BackColor = System.Drawing.Color.Lime;
-			this.btnHit.Location = new System.Drawing.Point(5, 53);
+			this.btnHit.Location = new System.Drawing.Point(144, 336);
 			this.btnHit.Name = "btnHit";
 			this.btnHit.Size = new System.Drawing.Size(75, 23);
 			this.btnHit.TabIndex = 7;
@@ -196,7 +196,7 @@
 			// btnDoubleDown
 			// 
 			this.btnDoubleDown.BackColor = System.Drawing.Color.Green;
-			this.btnDoubleDown.Location = new System.Drawing.Point(89, 53);
+			this.btnDoubleDown.Location = new System.Drawing.Point(269, 336);
 			this.btnDoubleDown.Name = "btnDoubleDown";
 			this.btnDoubleDown.Size = new System.Drawing.Size(80, 23);
 			this.btnDoubleDown.TabIndex = 8;
@@ -207,7 +207,7 @@
 			// btnStay
 			// 
 			this.btnStay.BackColor = System.Drawing.Color.Aqua;
-			this.btnStay.Location = new System.Drawing.Point(175, 53);
+			this.btnStay.Location = new System.Drawing.Point(414, 336);
 			this.btnStay.Name = "btnStay";
 			this.btnStay.Size = new System.Drawing.Size(75, 23);
 			this.btnStay.TabIndex = 9;

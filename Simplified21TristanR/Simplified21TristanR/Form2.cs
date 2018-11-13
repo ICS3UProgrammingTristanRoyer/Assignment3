@@ -13,29 +13,39 @@ namespace Simplified21TristanR
 {
 	public partial class Form2 : Form
 	{
-		SoundPlayer backSound = new SoundPlayer("c:/.wav");
-		Random rnd = new Random();
+		SoundPlayer backSound = new SoundPlayer("c:/Casino.wav");
+		
 		int MIN_CARD = 1;
 		int MAX_CARD = 10;
 		int BALANCE = 100;
 		int card1;
 		int card2;
 		int card3;
-		int dealercard1;
-		int dealercard2;
-		int dealercard3;
-		int dealercard4;
+		int dealerCard1;
+		int dealerCard2;
+		int dealerCard3;
+		int dealerCard4;
 		int bet;
-		const int STAY = 0;
-		const int HIT = 1 ;
-		const int DOUBLE_DOWN = 2;
 		
+
+	
+		int userChoice;
+		int dealerChoice;
+	
+
+
+
 
 		public Form2()
 		{
 			this.btnHit.Hide();
-			InitializeComponent();
+			this.btnDone.Hide();
+			this.btnStay.Hide();
+			this.btnDoubleDown.Hide();
 			
+
+			InitializeComponent();
+
 
 		}
 
@@ -52,18 +62,27 @@ namespace Simplified21TristanR
 
 		private void btnStay_Click(object sender, EventArgs e)
 		{
+			const int STAY = 1;
+			const int HIT = 2;
+			const int DEALERMINIMUM = 1;
+			const int DEALERMAXIMUM = 2;
+			int dealerCardTotal;
+			int playerCardTotal;
+			int userChoice;
+			int dealerChoice;
+			userChoice = STAY;
+			Random rnd = new Random();
+			dealerChoice = rnd.Next(DEALERMINIMUM, DEALERMAXIMUM + 1);
+			if (dealerChoice == STAY)
+			{
+				dealerCardTotal = dealerCard1 + dealerCard2 + dealerCard3 + dealerCard4;
 
+			}
 		}
 		private void btnDone_Click(object sender, EventArgs e)
 		{
-			card1 = rnd.Next(MIN_CARD, MAX_CARD + 1);
-			card2 = rnd.Next(MIN_CARD, MAX_CARD + 1);
-			dealercard1 = rnd.Next(MIN_CARD, MAX_CARD + 1);
-			dealercard2 = rnd.Next(MIN_CARD, MAX_CARD + 1);
-			dealercard3 = rnd.Next(MIN_CARD, MAX_CARD + 1);
-			if (UserChoice = STAY)
-			{ }
-
+		
+		
 
 		}
 
@@ -85,7 +104,12 @@ namespace Simplified21TristanR
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			bet = bet + (int)(this.nudBetAmount.Value)
+			bet = bet + (int)(this.nudBetAmount.Value);
+			card1 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+			card2 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+			dealerCard1 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+			dealerCard2 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+			dealerCard3 = rnd.Next(MIN_CARD, MAX_CARD + 1);
 		}
 
 		private void label4_Click(object sender, EventArgs e)
