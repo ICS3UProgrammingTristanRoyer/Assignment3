@@ -26,11 +26,17 @@ namespace Simplified21TristanR
 		int dealercard3;
 		int dealercard4;
 		int bet;
+		const int STAY = 0;
+		const int HIT = 1 ;
+		const int DOUBLE_DOWN = 2;
+		
 
 		public Form2()
 		{
-		
+			this.btnHit.Hide();
 			InitializeComponent();
+			
+
 		}
 
 		private void btnHit_Click(object sender, EventArgs e)
@@ -74,6 +80,21 @@ namespace Simplified21TristanR
 			backSound.Stop();
 			resumeToolStripMenuItem.Enabled = true;
 			muteToolStripMenuItem.Enabled = false;
+
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			bet = bet + (int)(this.nudBetAmount.Value)
+		}
+
+		private void label4_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label8_Click(object sender, EventArgs e)
+		{
 
 		}
 	}

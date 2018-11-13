@@ -9,3 +9,11 @@ C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21T
 C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.exe
 C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.pdb
 C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Form2.resources
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csprojAssemblyReference.cache
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Form1.resources
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Form2.resources
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Properties.Resources.resources
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csproj.GenerateResource.cache
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csproj.CoreCompileInputs.cache
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.exe
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.pdb
