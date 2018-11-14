@@ -2,7 +2,7 @@
  * Created by: Tristan Royer
  * Created on: Day-Month-Year
  * Created for: ICS3U Programming
- * Assignment #5b - Simplified 21
+ * Assignment #6b - Simplified 21
  * This program allows you to play a very simplified version of blackjack.
 */
 using System;
@@ -34,10 +34,11 @@ namespace Simplified21TristanR
 		int dealerCard2;
 		int dealerCard3;
 		int dealerCard4;
-		int bet;
+		double bet;
 		int playerCardTotal;
 		int dealerCardTotal;
-		int Earnings;
+		double Earnings;
+		int intearnings;
 
 		Random rnd = new Random();
 		
@@ -64,6 +65,8 @@ namespace Simplified21TristanR
 			this.btnHit.Hide();
 			this.btnStay.Hide();
 			this.btnDoubleDown.Hide();
+			this.lblCard1.Hide();
+			this.lblCard2.Hide();
 			this.lblCard3.Hide();
 			this.lblDealerCard1.Hide();
 			this.lblDealerCard2.Hide();
@@ -83,12 +86,144 @@ namespace Simplified21TristanR
 
 		private void btnHit_Click(object sender, EventArgs e)
 		{
+			const int STAY = 1;
+			const int HIT = 2;
+			const int DEALERMINIMUM = 1;
+			const int DEALERMAXIMUM = 2;
+			int dealerChoice;
+			card3 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+			playerCardTotal = card1 + card2 + card3;
+			dealerCardTotal = 0;
+			lblPlayerTotal.Text = "Player Total:" + playerCardTotal;
+			dealerChoice = rnd.Next(DEALERMINIMUM, DEALERMAXIMUM + 1);
+			if (dealerChoice == STAY)
+			{
+				dealerCard4 = 0;
+				dealerCardTotal = dealerCardTotal + dealerCard1 + dealerCard2 + dealerCard3 + dealerCard4;
+				lblDealerTotal.Text = "Dealer Total:" + dealerCardTotal;
+			}
+			else if (dealerChoice == HIT)
+			{
+				dealerCard4 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+				dealerCardTotal = dealerCardTotal + dealerCard1 + dealerCard2 + dealerCard3 + dealerCard4;
+				lblDealerTotal.Text = "Dealer Total:" + dealerCardTotal;
+				lblDealerCard4.Text = " " + dealerCard4;
+				lblDealerCard4.Show();
+
+			}
+			lblDealerCard1.Show();
+			lblDealerCard2.Show();
+			lblDealerCard3.Show();
+			this.btnHit.Hide();
+			this.btnStay.Hide();
+			this.btnDoubleDown.Hide();
+			if (playerCardTotal > 21)
+			{
+				lblWinner.Text = "you Lose";
+			}
+			else if (dealerCardTotal > 21)
+			{
+				lblWinner.Text = "you win";
+				balance = Earnings + balance;
+			}
+			else if (playerCardTotal == dealerCardTotal)
+			{
+				lblWinner.Text = "You tied , dealer wins.";
+
+			}
+			else if (playerCardTotal > dealerCardTotal)
+			{
+				lblWinner.Text = "you win";
+				balance = balance + Earnings;
+
+			}
+			else if (playerCardTotal < dealerCardTotal)
+			{
+				lblWinner.Text = "you Lose";
+			}
+			lblBalance.Text = String.Format("CA${0:0.00}", balance);
+
+			if (playerCardTotal == 21)
+			{
+				lblBlackjack.Text = "BLACKJACK!";
+			}
+
+
 
 
 		}
 
 		private void btnDoubleDown_Click(object sender, EventArgs e)
 		{
+			const int STAY = 1;
+			const int HIT = 2;
+			const int DEALERMINIMUM = 1;
+			const int DEALERMAXIMUM = 2;
+			int dealerChoice;
+			if (balance >= bet)
+			{
+				bet = bet * 2;
+				card3 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+				playerCardTotal = card1 + card2 + card3;
+				dealerCardTotal = 0;
+				lblPlayerTotal.Text = "Player Total:" + playerCardTotal;
+				dealerChoice = rnd.Next(DEALERMINIMUM, DEALERMAXIMUM + 1);
+				if (dealerChoice == STAY)
+				{
+					dealerCard4 = 0;
+					dealerCardTotal = dealerCardTotal + dealerCard1 + dealerCard2 + dealerCard3 + dealerCard4;
+					lblDealerTotal.Text = "Dealer Total:" + dealerCardTotal;
+				}
+				else if (dealerChoice == HIT)
+				{
+					dealerCard4 = rnd.Next(MIN_CARD, MAX_CARD + 1);
+					dealerCardTotal = dealerCardTotal + dealerCard1 + dealerCard2 + dealerCard3 + dealerCard4;
+					lblDealerTotal.Text = "Dealer Total:" + dealerCardTotal;
+					lblDealerCard4.Text = " " + dealerCard4;
+					lblDealerCard4.Show();
+
+				}
+				lblDealerCard1.Show();
+				lblDealerCard2.Show();
+				lblDealerCard3.Show();
+				this.btnHit.Hide();
+				this.btnStay.Hide();
+				this.btnDoubleDown.Hide();
+				if (playerCardTotal > 21)
+				{
+					lblWinner.Text = "you Lose";
+				}
+				else if (dealerCardTotal > 21)
+				{
+					lblWinner.Text = "you win";
+					balance = Earnings + balance;
+				}
+				else if (playerCardTotal == dealerCardTotal)
+				{
+					lblWinner.Text = "You tied , dealer wins.";
+
+				}
+				else if (playerCardTotal > dealerCardTotal)
+				{
+					lblWinner.Text = "you win";
+					balance = balance + Earnings;
+
+				}
+				else if (playerCardTotal < dealerCardTotal)
+				{
+					lblWinner.Text = "you Lose";
+				}
+				lblBalance.Text = String.Format("CA${0:0.00}", balance);
+
+				if (playerCardTotal == 21)
+				{
+					lblBlackjack.Text = "BLACKJACK!";
+				}
+			}
+			else
+			{
+				lblError.Text = "Insufficient funds";
+			}
 
 		}
 
@@ -99,7 +234,7 @@ namespace Simplified21TristanR
 			const int DEALERMINIMUM = 1;
 			const int DEALERMAXIMUM = 2;
 			int dealerChoice;
-			card3 = rnd.Next (MIN_CARD, MAX_CARD + 1);
+			card3 = 0;
 			playerCardTotal = card1 + card2 + card3;
 			dealerCardTotal = 0;
 			lblPlayerTotal.Text = "Player Total:" + playerCardTotal;
@@ -163,8 +298,7 @@ namespace Simplified21TristanR
 		}
 		private void btnDone_Click(object sender, EventArgs e)
 		{
-		
-		
+			
 
 		}
 
@@ -213,7 +347,8 @@ namespace Simplified21TristanR
 				this.btnDoubleDown.Show();
 
 				lblBalance.Text = String.Format("CA${0:0.00}", balance);
-				Earnings = bet / 2;
+				Earnings = bet * 1 / 2;
+				intEarnings = Convert.ToInt32(Earnings);
 			}
 			else
 				this.lblBetError.Text = "Your balance is too low";
