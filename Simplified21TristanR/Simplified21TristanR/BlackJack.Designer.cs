@@ -1,6 +1,6 @@
 ﻿namespace Simplified21TristanR
 {
-	partial class Form2
+	partial class BlackJack
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackJack));
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,6 @@
 			this.muteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lblError = new System.Windows.Forms.Label();
 			this.lblWinner = new System.Windows.Forms.Label();
-			this.btnDone = new System.Windows.Forms.Button();
 			this.lblDealerTotal = new System.Windows.Forms.Label();
 			this.lblPlayerTotal = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -59,6 +59,8 @@
 			this.lblBalance = new System.Windows.Forms.Label();
 			this.lblBetError = new System.Windows.Forms.Label();
 			this.lblDealerCard4 = new System.Windows.Forms.Label();
+			this.lblBlackjack = new System.Windows.Forms.Label();
+			this.lblTitle = new System.Windows.Forms.Label();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudBetAmount)).BeginInit();
 			this.SuspendLayout();
@@ -87,20 +89,23 @@
 			// newGameToolStripMenuItem
 			// 
 			this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-			this.newGameToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+			this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.newGameToolStripMenuItem.Text = "New Game";
+			this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
 			// 
 			// resetProgressToolStripMenuItem
 			// 
 			this.resetProgressToolStripMenuItem.Name = "resetProgressToolStripMenuItem";
-			this.resetProgressToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+			this.resetProgressToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.resetProgressToolStripMenuItem.Text = "Reset Progress";
+			this.resetProgressToolStripMenuItem.Click += new System.EventHandler(this.resetProgressToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
+			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
 			// musicToolStripMenuItem
 			// 
@@ -142,16 +147,6 @@
 			this.lblWinner.Size = new System.Drawing.Size(13, 13);
 			this.lblWinner.TabIndex = 2;
 			this.lblWinner.Text = "--";
-			// 
-			// btnDone
-			// 
-			this.btnDone.Location = new System.Drawing.Point(10, 42);
-			this.btnDone.Name = "btnDone";
-			this.btnDone.Size = new System.Drawing.Size(75, 23);
-			this.btnDone.TabIndex = 3;
-			this.btnDone.Text = "Done";
-			this.btnDone.UseVisualStyleBackColor = true;
-			this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
 			// 
 			// lblDealerTotal
 			// 
@@ -327,9 +322,9 @@
 			this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblBalance.Location = new System.Drawing.Point(711, 29);
 			this.lblBalance.Name = "lblBalance";
-			this.lblBalance.Size = new System.Drawing.Size(15, 16);
+			this.lblBalance.Size = new System.Drawing.Size(54, 16);
 			this.lblBalance.TabIndex = 21;
-			this.lblBalance.Text = "0";
+			this.lblBalance.Text = "CA$100";
 			// 
 			// lblBetError
 			// 
@@ -349,11 +344,33 @@
 			this.lblDealerCard4.TabIndex = 23;
 			this.lblDealerCard4.Text = "DEALERCARD4";
 			// 
-			// Form2
+			// lblBlackjack
+			// 
+			this.lblBlackjack.AutoSize = true;
+			this.lblBlackjack.Location = new System.Drawing.Point(266, 428);
+			this.lblBlackjack.Name = "lblBlackjack";
+			this.lblBlackjack.Size = new System.Drawing.Size(13, 13);
+			this.lblBlackjack.TabIndex = 24;
+			this.lblBlackjack.Text = "--";
+			// 
+			// lblTitle
+			// 
+			this.lblTitle.AutoSize = true;
+			this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTitle.Location = new System.Drawing.Point(10, 37);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.Size = new System.Drawing.Size(144, 25);
+			this.lblTitle.TabIndex = 26;
+			this.lblTitle.Text = "BLACKJACK";
+			// 
+			// BlackJack
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.DodgerBlue;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.lblTitle);
+			this.Controls.Add(this.lblBlackjack);
 			this.Controls.Add(this.lblDealerCard4);
 			this.Controls.Add(this.lblBetError);
 			this.Controls.Add(this.lblBalance);
@@ -374,12 +391,12 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.lblPlayerTotal);
 			this.Controls.Add(this.lblDealerTotal);
-			this.Controls.Add(this.btnDone);
 			this.Controls.Add(this.lblWinner);
 			this.Controls.Add(this.lblError);
 			this.Controls.Add(this.menuStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
-			this.Name = "Form2";
+			this.Name = "BlackJack";
 			this.Text = "Form2";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
@@ -398,7 +415,6 @@
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
 		private System.Windows.Forms.Label lblError;
 		private System.Windows.Forms.Label lblWinner;
-		private System.Windows.Forms.Button btnDone;
 		private System.Windows.Forms.Label lblDealerTotal;
 		private System.Windows.Forms.Label lblPlayerTotal;
 		private System.Windows.Forms.Label label3;
@@ -422,5 +438,7 @@
 		private System.Windows.Forms.Label lblBalance;
 		private System.Windows.Forms.Label lblBetError;
 		private System.Windows.Forms.Label lblDealerCard4;
+		private System.Windows.Forms.Label lblBlackjack;
+		private System.Windows.Forms.Label lblTitle;
 	}
 }

@@ -31,7 +31,7 @@ namespace Simplified21TristanR
 			if (age >= 21)
 			{
 				this.Hide();
-				Form2 Form2 = new Form2();
+				BlackJack Form2 = new BlackJack();
 				Form2.ShowDialog();
 			}
 			else if (age < 21)
