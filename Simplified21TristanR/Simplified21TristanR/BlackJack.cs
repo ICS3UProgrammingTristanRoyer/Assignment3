@@ -344,7 +344,11 @@ namespace Simplified21TristanR
 				this.lblCard1.Show();
 				this.lblCard2.Show();
 <<<<<<< HEAD
+<<<<<<< HEAD
 				// shows the buttons for the user's options.
+=======
+				this.lblCard3.Show();
+>>>>>>> parent of da8303b... done
 =======
 				this.lblCard3.Show();
 >>>>>>> parent of da8303b... done
@@ -357,8 +361,12 @@ namespace Simplified21TristanR
 				intEarnings = Convert.ToInt32(Earnings);
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			else if (nudBetAmount.Value > balance)
 				// if the bet is over the balance display an error message.
+=======
+			else
+>>>>>>> parent of da8303b... done
 =======
 			else
 >>>>>>> parent of da8303b... done
