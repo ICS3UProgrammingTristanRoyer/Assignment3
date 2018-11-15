@@ -151,7 +151,6 @@
 			// lblDealerTotal
 			// 
 			this.lblDealerTotal.AutoSize = true;
-			this.lblDealerTotal.BackColor = System.Drawing.Color.HotPink;
 			this.lblDealerTotal.Location = new System.Drawing.Point(7, 235);
 			this.lblDealerTotal.Name = "lblDealerTotal";
 			this.lblDealerTotal.Size = new System.Drawing.Size(68, 13);
@@ -161,7 +160,6 @@
 			// lblPlayerTotal
 			// 
 			this.lblPlayerTotal.AutoSize = true;
-			this.lblPlayerTotal.BackColor = System.Drawing.Color.LawnGreen;
 			this.lblPlayerTotal.Location = new System.Drawing.Point(7, 120);
 			this.lblPlayerTotal.Name = "lblPlayerTotal";
 			this.lblPlayerTotal.Size = new System.Drawing.Size(62, 13);
@@ -215,11 +213,6 @@
 			// nudBetAmount
 			// 
 			this.nudBetAmount.Location = new System.Drawing.Point(680, 56);
-			this.nudBetAmount.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
 			this.nudBetAmount.Name = "nudBetAmount";
 			this.nudBetAmount.Size = new System.Drawing.Size(120, 20);
 			this.nudBetAmount.TabIndex = 10;
@@ -247,7 +240,6 @@
 			// lblCard1
 			// 
 			this.lblCard1.AutoSize = true;
-			this.lblCard1.BackColor = System.Drawing.Color.LightCyan;
 			this.lblCard1.Location = new System.Drawing.Point(12, 148);
 			this.lblCard1.Name = "lblCard1";
 			this.lblCard1.Size = new System.Drawing.Size(43, 13);
@@ -258,7 +250,6 @@
 			// lblCard2
 			// 
 			this.lblCard2.AutoSize = true;
-			this.lblCard2.BackColor = System.Drawing.Color.LightCyan;
 			this.lblCard2.Location = new System.Drawing.Point(86, 148);
 			this.lblCard2.Name = "lblCard2";
 			this.lblCard2.Size = new System.Drawing.Size(43, 13);
@@ -268,7 +259,6 @@
 			// lblCard3
 			// 
 			this.lblCard3.AutoSize = true;
-			this.lblCard3.BackColor = System.Drawing.Color.LightCyan;
 			this.lblCard3.Location = new System.Drawing.Point(167, 148);
 			this.lblCard3.Name = "lblCard3";
 			this.lblCard3.Size = new System.Drawing.Size(43, 13);
@@ -300,7 +290,6 @@
 			// lblDealerCard1
 			// 
 			this.lblDealerCard1.AutoSize = true;
-			this.lblDealerCard1.BackColor = System.Drawing.Color.LightCyan;
 			this.lblDealerCard1.Location = new System.Drawing.Point(12, 269);
 			this.lblDealerCard1.Name = "lblDealerCard1";
 			this.lblDealerCard1.Size = new System.Drawing.Size(86, 13);
@@ -310,7 +299,6 @@
 			// lblDealerCard2
 			// 
 			this.lblDealerCard2.AutoSize = true;
-			this.lblDealerCard2.BackColor = System.Drawing.Color.LightCyan;
 			this.lblDealerCard2.Location = new System.Drawing.Point(105, 269);
 			this.lblDealerCard2.Name = "lblDealerCard2";
 			this.lblDealerCard2.Size = new System.Drawing.Size(86, 13);
@@ -320,7 +308,6 @@
 			// lblDealerCard3
 			// 
 			this.lblDealerCard3.AutoSize = true;
-			this.lblDealerCard3.BackColor = System.Drawing.Color.LightCyan;
 			this.lblDealerCard3.Location = new System.Drawing.Point(201, 269);
 			this.lblDealerCard3.Name = "lblDealerCard3";
 			this.lblDealerCard3.Size = new System.Drawing.Size(86, 13);
@@ -351,7 +338,6 @@
 			// lblDealerCard4
 			// 
 			this.lblDealerCard4.AutoSize = true;
-			this.lblDealerCard4.BackColor = System.Drawing.Color.LightCyan;
 			this.lblDealerCard4.Location = new System.Drawing.Point(302, 269);
 			this.lblDealerCard4.Name = "lblDealerCard4";
 			this.lblDealerCard4.Size = new System.Drawing.Size(86, 13);

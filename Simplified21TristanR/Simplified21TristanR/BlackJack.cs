@@ -99,7 +99,6 @@ namespace Simplified21TristanR
 			card3 = rnd.Next(MIN_CARD, MAX_CARD + 1);
 			lblCard3.Text = "" + card3;
 			playerCardTotal = card1 + card2 + card3;
-			this.lblCard3.Show();
 			dealerCardTotal = 0;
 			lblPlayerTotal.Text = "Player Total:" + playerCardTotal;
 			dealerChoice = rnd.Next(DEALERMINIMUM, DEALERMAXIMUM + 1);
@@ -184,7 +183,6 @@ namespace Simplified21TristanR
 				card3 = rnd.Next(MIN_CARD, MAX_CARD + 1);
 				lblCard3.Text = "" + card3;
 				playerCardTotal = card1 + card2 + card3;
-				this.lblCard3.Show();
 				dealerCardTotal = 0;
 				lblPlayerTotal.Text = "Player Total:" + playerCardTotal;
 				dealerChoice = rnd.Next(DEALERMINIMUM, DEALERMAXIMUM + 1);
@@ -390,6 +388,7 @@ namespace Simplified21TristanR
 				// shows the cards for the user.
 				this.lblCard1.Show();
 				this.lblCard2.Show();
+				this.lblCard3.Show();
 				// shows the buttons for the user's options.
 				this.btnHit.Show();
 				this.btnStay.Show();
@@ -401,10 +400,9 @@ namespace Simplified21TristanR
 				// converts the earnings to an int preventing decimals.
 				intEarnings = Convert.ToInt32(Earnings);
 			}
-			else if (nudBetAmount.Value > balance)
+			else
 				// if the bet is over the balance display an error message.
 				this.lblBetError.Text = "Your balance is too low";
-			
 
 		}
 
@@ -451,7 +449,6 @@ namespace Simplified21TristanR
 			dealerCard2 = dealerCard2 * 0;
 			dealerCard3 = dealerCard3 * 0;
 			dealerCard4 = dealerCard4 * 0;
-			lblBetError.Text = "--";
 			playerCardTotal = playerCardTotal * 0;
 			dealerCardTotal = dealerCardTotal * 0;
 
@@ -489,7 +486,6 @@ namespace Simplified21TristanR
 			dealerCard4 = dealerCard4 * 0;
 			playerCardTotal = playerCardTotal * 0;
 			dealerCardTotal = dealerCardTotal * 0;
-			lblBetError.Text = "--";
 			balance = balance * 0 + 100;
             lblBalance.Text = String.Format("CA${0:0.00}", balance);
 
