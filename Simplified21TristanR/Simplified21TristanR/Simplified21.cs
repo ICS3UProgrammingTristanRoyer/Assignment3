@@ -16,7 +16,7 @@ namespace Simplified21TristanR
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.Run(new Simplified21Form());
 		}
 	}
 }
