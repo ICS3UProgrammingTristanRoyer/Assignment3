@@ -1,6 +1,6 @@
 ﻿namespace Simplified21TristanR
 {
-	partial class Form1
+	partial class Simplified21Form
 	{
 		/// <summary>
 		/// Required designer variable.

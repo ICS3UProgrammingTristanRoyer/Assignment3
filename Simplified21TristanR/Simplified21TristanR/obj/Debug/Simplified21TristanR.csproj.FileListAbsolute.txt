@@ -10,7 +10,6 @@ C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21T
 C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.pdb
 C:\Users\Clayt\Desktop\Assignments\New folder\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Form2.resources
 C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csprojAssemblyReference.cache
-C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Form1.resources
 C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Properties.Resources.resources
 C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csproj.GenerateResource.cache
 C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csproj.CoreCompileInputs.cache
@@ -30,3 +29,4 @@ N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\As
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.csproj.GenerateResource.Cache
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.exe
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.pdb
+C:\Users\Clayt\Desktop\Assignment3\Simplified21TristanR\Simplified21TristanR\obj\Debug\Simplified21TristanR.Simplified21Form.resources
